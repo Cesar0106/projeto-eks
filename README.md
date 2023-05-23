@@ -7,6 +7,8 @@ Para realizar essa tarefa serão utilizadas algumas tecnologias, como:
 2. Docker
 3. Aplicação Web
 4. Load Balancer
+
+
 	O Docker é útil nessa situação porque permite criar uma imagem de contêiner autocontido que inclui tudo o que é necessário para executar sua aplicação web, incluindo o código, as dependências e qualquer outro software necessário. Ao empacotar sua aplicação e suas dependências em um contêiner do Docker, você pode garantir que sua aplicação seja executada de maneira consistente e previsível em diferentes ambientes, sem problemas de compatibilidade ou conflitos com outro software instalado no sistema host.
 	
 	Para um caso simples como o de implantar uma aplicação web em um container Docker e implantá-la no EKS usando Kubernetes e um LoadBalancer, uma opção seria utilizar um aplicativo web em Python, como o Flask.
@@ -306,6 +308,7 @@ Com esses arquivos criados, execute no terminal os comandos:
 ``terraform plan``
 
 ``terraform apply``
+
 Em seguida execute esses comandos para verificar o endereço da aplicação:
 
 ``aws eks --region us-east-1 update-kubeconfig --name my-web-app-cluster``
