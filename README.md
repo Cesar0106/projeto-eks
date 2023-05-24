@@ -1,4 +1,5 @@
 # projeto-eks
+![Sample Image](imagem.drawio.png)
 
 A ideia do projeto será utilizar o EKS disponibilizado pela AWS para implementação de uma aplicação web que utiliza clusters Kubernetes. Nesse caso a função do Elastic Kubernetes Service será gerenciar a aplicação.
 
